@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVGR</title>
+
+    <style>
+      .ul{
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        overflow:hidden;
+        background-color: rgb(250, 213, 112);
+        
+      }
+      .li{
+        float:left;
+      }
+  
+      .li a{
+        display:block;
+        color: rgb(96, 12, 231);
+        text-align: center;
+        padding: 16px;
+        text-decoration:none;
+      }
+  
+      .li a:hover{
+        background-color: rgb(55, 243, 9);
+      }
+    </style>
+
+</head>
+<body style="background-color: antiquewhite;">
+
+  <ul class="ul">
+    <li class="li"><a href="home page.html">Home</a></li>
+    <li class="li"><a href="academics.html">Academics</a></li>
+    <li class="li"><a href="admission.html">Admission</a></li>
+    <li class="li"><a href="gallery.html">Gallery</a></li>
+  </ul><br><br>
+
+    <form action="abc.php">
+    <fieldset style="width: 50%; background-color: whitesmoke; color: red; font-family: Arial, Helvetica, sans-serif;">
+        <legend style="color: blue; background-color: yellow; font-size:x-large;">Admission Form</legend> <br>
+
+        <label for="prefix">Prefix:</label>
+        <select name="Prefix" id="prefix">
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Other" >Other</option>
+          </select>
+  
+          &nbsp;
+          
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname">
+
+          &nbsp;
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname"> <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+
+          &nbsp;&nbsp;&nbsp;
+
+          <label for="fname">Fathers/Mothers Name</label>
+          <input type="text" id="fname" name="fname"><br><br>
+
+          
+          Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label> 
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label> 
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        Category:
+        <input type="radio" id="oc" name="category" value="oc">
+        <label for="oc">OC</label> 
+        <input type="radio" id="obc" name="category" value="obc">
+        <label for="obc">OBC</label> 
+        <input type="radio" id="sc/st" name="category" value="sc/st">
+        <label for="sc/st">Sc/St</label>
+
+       <br><br>
+
+       <label for="phone_number">Phone number:</label>
+       <input type="text" id="phone_number" maxlength="10" pattern="[0-9]{10}"> &nbsp; &nbsp; &nbsp;
+
+       <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation" ><br><br>
+
+            <label for="rank">Eamcet Rank</label>
+            <input type="number" id="rank" name="rank" max="100000"> &nbsp; &nbsp; &nbsp;
+
+
+            <label for="income">Annual Income</label>
+        <input type="number" id="income" name="income"><br><br>
+        
+        
+        <label for="address">Residential Address:</label> <br>
+        <textarea name="address" id="address" rows="5" cols="20" style="resize: none;"></textarea><br><br>
+
+        <label for="branch">Branch:</label>
+        <select name="branch" id="branch">
+            <option value="mech">Mechanical</option>
+            <option value="civil">Civil</option>
+            <option value="eee" >Electrical and Electronics Engineering</option>
+            <option value="it" >Information Technology</option>
+            <option value="ece" >Electrical and Communication Engineering</option>
+            <option value="chemical" >Chemical</option>
+            <option value="cse" >Computer Science</option>
+            
+
+          </select>
+          
+          &nbsp; &nbsp; 
+
+          <label for="10th">SSC Percentage:</label>
+            <input type="number" id="10th" name="10th" max="100"> <br><br>
+
+            <label for="12th">12th Percentage</label>
+            <input type="number" id="12th" name="12th" max="100"> <br><br>
+
+
+<label for="health">Do you have any health issue?</label> <br>
+        <textarea name="health" id="health" rows="5" cols="20" style="resize: none;"></textarea><br><br>
+
+        <label for="why">Why would you like to join?</label> <br>
+        <textarea name="why" id="why" rows="5" cols="20" style="resize: none;"></textarea><br><br>
+
+        I acknowledge that the details provided by me are as per the best of my knowledge and I accept that any inconsistency found later can lead to termination of my seat. <br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree</label>
+          &nbsp;&nbsp;&nbsp;
+
+        <input type="submit">        
+
+    </fieldset>
+</form>
+</body>
+</html>

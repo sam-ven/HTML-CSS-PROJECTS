@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+
+    <style>
+        .ul{
+          list-style-type: none;
+          margin:0;
+          padding: 0;
+          overflow:hidden;
+          background-color: rgba(112, 245, 250, 0.801);
+          
+        }
+        .li{
+          float:left;
+        }
+    
+        .li a{
+          display:block;
+          color: rgb(96, 12, 231);
+          text-align: center;
+          padding: 16px;
+          text-decoration:none;
+        }
+    
+        .li a:hover{
+          background-color: rgba(253, 97, 6, 0.993);
+        }
+      </style>
+
+</head>
+<body style="background-image: url('images2/background.jpg');">
+
+    <ul class="ul">
+        <li class="li"><a href="home.html">Home</a></li>
+        <li class="li"><a href="heritage.html">Heritage</a></li>
+        <li class="li"><a href="hotel.html">Hotel Booking</a></li>
+        <li class="li"><a href="gallery.html">Gallery</a></li>
+      </ul>
+
+      <br><br>
+
+    <form action="abc.php">
+    <fieldset style="width: 50%; background-color: whitesmoke; color: red; font-family: Arial, Helvetica, sans-serif;">
+        <legend style="color: blue; background-color: yellow; font-size:x-large;">Hotel Booking Form</legend> <br>
+
+        <label for="prefix">Prefix:</label>
+        <select name="Prefix" id="prefix">
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Other" >Other</option>
+          </select>
+  
+          &nbsp;&nbsp;
+          
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname">
+
+          &nbsp;&nbsp;
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname"> <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+
+          &nbsp;&nbsp;&nbsp;
+
+          
+
+          
+          Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label> 
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label> 
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label> &nbsp;&nbsp;&nbsp;
+
+      <br><br>
+
+      <label for="phone_number">Phone number:</label>
+      <input type="text" id="phone_number" maxlength="10" pattern="[0-9]{10}">
+
+      &nbsp; &nbsp; &nbsp;
+
+      <label for="number_of_people">Number of people</label>
+      <input type="number" id="number_of_people" name="number_of_people" max="3" min="1"><br><br>
+
+      <label for="number_of_days">Number of days</label>
+        <select name="number_of_days" id="number_of_days">
+            <option value="1">1 day</option>
+            <option value="2">2 days</option>
+            <option value="3" >3 days</option>
+          </select>
+
+          &nbsp; &nbsp; &nbsp;
+
+          <label for="room_type">Room Type</label>
+        <select name="room_type" id="room_type">
+            <option value="raza">Raza 3500 per/day</option>
+            <option value="rani">Rani 2800 per/day</option>
+            <option value="manthri" >Manthri 2200 per/day</option>
+            <option value="sevak" >Sevak 1500 per/day</option>
+
+          </select><br><br>
+
+          <label for="check_in_date">Check in Date:</label>
+          <input type="date" id="check_in_date" name="check_in_date">
+
+          &emsp;
+
+          <label for="check_in_time">Check in Time:</label>
+        <select name="check_in_time" id="check_in_time">
+            <option value="8">8 am</option>
+            <option value="13">1 pm</option>
+            <option value="18" >6 pm</option>
+
+          </select> <br><br>
+
+          <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation" > <br><br>
+
+
+        
+        <label for="residential_address">Residential Address:</label> <br>
+        <textarea name="corporate_address" id="corporate_address" rows="5" cols="20" style="resize: none;"></textarea> <br><br>
+
+            
+          I promise that all the details provided by me is true to the best of my knowledge and if the details are found to be false later, my booking could be cancelled. <br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree</label> &nbsp; &nbsp; 
+
+        <input type="reset">&nbsp; &nbsp;
+
+        <input type="submit">
+
+    </fieldset>
+</form>
+</body>
+</html>
